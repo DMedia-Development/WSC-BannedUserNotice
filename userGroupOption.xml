@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/userGroupOption.xsd">
+    <import>
+        <categories>
+            <category name="user.profile.bannedUserNotice">
+                <parent>user.profile</parent>
+            </category>
+        </categories>
+
+        <options>
+            <option name="user.profile.bannedUserNotice.canSeeBannedUserNotice">
+                <categoryname>user.profile.bannedUserNotice</categoryname>
+                <optiontype>boolean</optiontype>
+                <showorder>1</showorder>
+                <defaultValue>1</defaultValue>
+                <admindefaultvalue>1</admindefaultvalue>
+                <moddefaultvalue>1</moddefaultvalue>
+                <userdefaultvalue>1</userdefaultvalue>
+            </option>
+
+            <option name="user.profile.bannedUserNotice.canSeeBannedUserNoticeInfo">
+                <categoryname>user.profile.bannedUserNotice</categoryname>
+                <optiontype>boolean</optiontype>
+                <showorder>2</showorder>
+                <defaultValue>0</defaultValue>
+                <admindefaultvalue>1</admindefaultvalue>
+                <moddefaultvalue>1</moddefaultvalue>
+                <userdefaultvalue>0</userdefaultvalue>
+            </option>
+        </options>
+    </import>
+</data>
