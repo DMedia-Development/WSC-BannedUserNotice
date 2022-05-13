@@ -24,14 +24,14 @@
 
     <instructions type="install">
         <instruction type="language"/>
-		<instruction type="template"/>
+        <instruction type="template"/>
         <instruction type="templateListener"/>
         <instruction type="userGroupOption"/>
     </instructions>
 
     <instructions type="update" fromversion="1.0.0">
         <instruction type="language"/>
-		<instruction type="template"/>
+        <instruction type="template"/>
         <instruction type="templateListener"/>
         <instruction type="userGroupOption"/>
     </instructions>
