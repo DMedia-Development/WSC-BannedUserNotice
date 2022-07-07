@@ -5,8 +5,8 @@
         <packagedescription><![CDATA[This plugin adds a notice on the profile page of banned users with information about the ban.]]></packagedescription>
         <packagename language="de"><![CDATA[Hinweis für gesperrte Benutzer]]></packagename>
         <packagedescription language="de"><![CDATA[Dieses Plugin fügt bei gesperrten Benutzern auf der Profilseite einen Hinweis mit Informationen zum Bann hinzu.]]></packagedescription>
-        <version>5.4.0</version>
-        <date>2021-08-27</date>
+        <version>5.5.0</version>
+        <date>2022-07-07</date>
     </packageinformation>
 
     <authorinformation>
@@ -19,7 +19,7 @@
     </requiredpackages>
 
     <excludedpackages>
-        <excludedpackage version="5.5.0 Alpha 1">com.woltlab.wcf</excludedpackage>
+        <excludedpackage version="6.0.0 Alpha 1">com.woltlab.wcf</excludedpackage>
     </excludedpackages>
 
     <instructions type="install">
@@ -34,5 +34,9 @@
         <instruction type="template"/>
         <instruction type="templateListener"/>
         <instruction type="userGroupOption"/>
+    </instructions>
+
+    <instructions type="update" fromversion="5.4.0">
+        <void />
     </instructions>
 </package>
