@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language xmlns="https://www.woltlab.com" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/5.4/language.xsd" languagecode="en" languagename="English" countrycode="en">
+    <import>
+        <category name="wcf.bannedUserNotice">
+            <item name="wcf.bannedUserNotice.bannedUser"><![CDATA[The user <strong>{$user->username}</strong> is banned from using any site functions.]]></item>
+            <item name="wcf.bannedUserNotice.banExpires"><![CDATA[Expires: {if $user->banExpires != 0}{@$user->banExpires|plainTime}{else}Never{/if}]]></item>
+            <item name="wcf.bannedUserNotice.banReason"><![CDATA[Reason: {@$user->banReason|newlineToBreak}]]></item>
+        </category>
 
-    <category name="wcf.bannedUserNotice">
-        <item name="wcf.bannedUserNotice.bannedUser"><![CDATA[The user <strong>{$user->username}</strong> is banned from using any site functions.]]></item>
-        <item name="wcf.bannedUserNotice.banExpires"><![CDATA[Expires: {if $user->banExpires != 0}{@$user->banExpires|plainTime}{else}Never{/if}]]></item>
-        <item name="wcf.bannedUserNotice.banReason"><![CDATA[Reason: {@$user->banReason|newlineToBreak}]]></item>
-    </category>
-
-    <category name="wcf.acp.group">
-        <item name="wcf.acp.group.option.category.user.profile.bannedUserNotice"><![CDATA[Hinweis zu gesperrten Benutzern im Benutzerprofil]]></item>
-        <item name="wcf.acp.group.option.user.profile.bannedUserNotice.canSeeBannedUserNotice"><![CDATA[Can see banned user notice]]></item>
-        <item name="wcf.acp.group.option.user.profile.bannedUserNotice.canSeeBannedUserNotice.description"><![CDATA[Groups with this right can see the banned user notice in user profiles.]]></item>
-        <item name="wcf.acp.group.option.user.profile.bannedUserNotice.canSeeBannedUserNoticeInfo"><![CDATA[Can see banned user notice information]]></item>
-        <item name="wcf.acp.group.option.user.profile.bannedUserNotice.canSeeBannedUserNoticeInfo.description"><![CDATA[Groups with this right can see detailed information about the user's ban.]]></item>
-    </category>
-
+        <category name="wcf.acp.group">
+            <item name="wcf.acp.group.option.category.user.profile.bannedUserNotice"><![CDATA[Hinweis zu gesperrten Benutzern im Benutzerprofil]]></item>
+            <item name="wcf.acp.group.option.user.profile.bannedUserNotice.canSeeBannedUserNotice"><![CDATA[Can see banned user notice]]></item>
+            <item name="wcf.acp.group.option.user.profile.bannedUserNotice.canSeeBannedUserNotice.description"><![CDATA[Groups with this right can see the banned user notice in user profiles.]]></item>
+            <item name="wcf.acp.group.option.user.profile.bannedUserNotice.canSeeBannedUserNoticeInfo"><![CDATA[Can see banned user notice information]]></item>
+            <item name="wcf.acp.group.option.user.profile.bannedUserNotice.canSeeBannedUserNoticeInfo.description"><![CDATA[Groups with this right can see detailed information about the user's ban.]]></item>
+        </category>
+    </import>
 </language>
