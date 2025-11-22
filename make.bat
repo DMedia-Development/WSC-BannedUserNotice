@@ -43,31 +43,31 @@ IF EXIST %PACKAGE_NAME%*.tar.gz (
 
 Rem Compress files directory if present
 IF EXIST files (
-  "C:\Program Files\7-Zip\7z.exe" a -ttar -mx=9 files.tar .\files\*
+  7z.exe a -ttar -mx=9 files.tar .\files\*
 )
 
 Rem Compress templates directory if present
 IF EXIST templates (
-  "C:\Program Files\7-Zip\7z.exe" a -ttar -mx=9 templates.tar .\templates\*
+  7z.exe a -ttar -mx=9 templates.tar .\templates\*
 )
 
 Rem Compress acptemplates directory if present
 IF EXIST acptemplates (
-  "C:\Program Files\7-Zip\7z.exe" a -ttar -mx=9 acptemplates.tar .\acptemplates\*
+  7z.exe a -ttar -mx=9 acptemplates.tar .\acptemplates\*
 )
 
 Rem Compress acptemplates_update directory if present
 IF EXIST acptemplates_update (
-  "C:\Program Files\7-Zip\7z.exe" a -ttar -mx=9 acptemplates_update.tar .\acptemplates_update\*
+  7z.exe a -ttar -mx=9 acptemplates_update.tar .\acptemplates_update\*
 )
 
 Rem Create PACKAGE_NAME.tar
-"C:\Program Files\7-Zip\7z.exe" a -ttar -mx=9 %PACKAGE_NAME%_v%PACKAGE_VERSION%.tar .\* -x!acptemplates -x!files -x!templates -x!%PACKAGE_NAME%.tar -x!.git -x!.github -x!.gitignore -x!make.bat -x!make.sh -x!.vscode -x!.idea -x!constants.php -x!README.md -x!LICENSE -x!.phpcs.xml -x!.php-cs-fixer.dist.php -x!.php-cs-fixer.cache
+7z.exe a -ttar -mx=9 %PACKAGE_NAME%_v%PACKAGE_VERSION%.tar .\* -x!acptemplates -x!files -x!templates -x!%PACKAGE_NAME%.tar -x!.git -x!.github -x!.gitignore -x!make.bat -x!make.sh -x!.vscode -x!.idea -x!constants.php -x!README.md -x!LICENSE -x!.phpcs.xml -x!.php-cs-fixer.dist.php -x!.php-cs-fixer.cache
 
 timeout 1 >nul
 
 Rem Create PACKAGE_NAME.tar.gz
-"C:\Program Files\7-Zip\7z.exe" a -tgzip  %PACKAGE_NAME%_v%PACKAGE_VERSION%.tar.gz %PACKAGE_NAME%_v%PACKAGE_VERSION%.tar
+7z.exe a -tgzip  %PACKAGE_NAME%_v%PACKAGE_VERSION%.tar.gz %PACKAGE_NAME%_v%PACKAGE_VERSION%.tar
 
 timeout 1 >nul
 
